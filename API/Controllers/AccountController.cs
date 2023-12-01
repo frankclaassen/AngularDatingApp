@@ -49,6 +49,7 @@ public class AccountController : BaseApiController
     });
   }
 
+  [AllowAnonymous]
   [HttpPost("login")]
   public async Task<ActionResult<UserDto>> Login(LoginDto loginDto)
   {
